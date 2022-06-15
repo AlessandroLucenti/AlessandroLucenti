@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavFragment"
+    android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/NbaWesternConference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NBA Western Conference"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/Rockets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Rockets"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/NbaWesternConference" />
+
+    <Button
+        android:id="@+id/LosAngelesLakers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Lakers"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Rockets" />
+    <Button
+        android:id="@+id/Kings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Kings"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/LosAngelesLakers" />
+    <Button
+        android:id="@+id/thunder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Thunder"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Kings" />
+    <Button
+        android:id="@+id/TrialBlazer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Trial Blazer"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/thunder" />
+    <Button
+        android:id="@+id/clippers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Clippers"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/TrialBlazer" />
+    <Button
+        android:id="@+id/Pellicans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Pellicans"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/clippers" />
+    <Button
+        android:id="@+id/Timberwolves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Timberwolves"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Pellicans" />
+    <Button
+        android:id="@+id/nuggets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Nuggets"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Timberwolves" />
+    <Button
+        android:id="@+id/Jazz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Jazz"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/nuggets" />
+    <Button
+        android:id="@+id/Mavericks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Maverick"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Jazz" />
+    <Button
+        android:id="@+id/Warriors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Warriors"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Jazz" />
+    <Button
+        android:id="@+id/grizzlies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Grizzlies"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Warriors" />
+    <Button
+        android:id="@+id/Suns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Suns"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Warriors" />
+    <TextView
+        android:id="@+id/NbaEsternConference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NBA Estern Conference"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/Suns"/>
+    <Button
+        android:id="@+id/Heat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Heat"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/NbaEsternConference" />
+    <Button
+        android:id="@+id/Celitc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Celtic"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Heat" />
+    <Button
+        android:id="@+id/Bucks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Bucks"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Celitc" />
+    <Button
+        android:id="@+id/Sixer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Sixer"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Bucks" />
+    <Button
+        android:id="@+id/Raptors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Raptors"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Sixer" />
+    <Button
+        android:id="@+id/Bulls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Bulls"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Raptors" />
+    <Button
+        android:id="@+id/Nets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Nets"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Raptors" />
+    v
+    <Button
+        android:id="@+id/Hawks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Hawks"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Nets" />
+    <Button
+        android:id="@+id/Cavaliers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Cavaliers"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Hawks" />
+    <Button
+        android:id="@+id/Hornets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Hornets"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Cavaliers" />
+    <Button
+        android:id="@+id/Knics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Knics"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Hornets" />
+    <Button
+        android:id="@+id/Wizards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Wizards"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Hornets" />
+    <Button
+        android:id="@+id/Pacers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Pacers"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Wizards" />
+    <Button
+        android:id="@+id/Pistons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Pistons"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Pacers" />
+    <Button
+        android:id="@+id/Magic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Magic"
+        android:textColor="@color/bottom_nav_background"
+        app:layout_constraintTop_toBottomOf="@+id/Pistons" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/marketFragment"
+        android:icon="@drawable/market"
+        android:title="Mercato" />
+    <item
+        android:id="@+id/rankingFragment"
+        android:icon="@drawable/basket"
+        android:title="Classifica" />
+    <item
+        android:id="@+id/newsFragment"
+        android:icon="@drawable/ic_baseline_newspaper_24"
+        android:title="News" />
+    <item
+        android:id="@+id/highlightFragment"
+        android:icon="@drawable/highlights"
+        android:title="Highliths" />
+    <item
+        android:id="@+id/favFragment"
+        android:icon="@drawable/fav_squad"
+        android:title="Squad" />
+</menu>
