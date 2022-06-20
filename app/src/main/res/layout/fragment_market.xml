@@ -1,15 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MarketFragment"
     android:background="@color/black">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    //primaScheda
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Giocatore1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="100dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/nomeGiocatore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Giocatore1" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/RuoloGiocatore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghoul"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeGiocatore1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_prima1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore1" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_dopo1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore1" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomePrimaSquadra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_dopo1" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomeSecondaSquadra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_prima1" />
+
+    //seconda scheda
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Giocatore2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NomePrimaSquadra1" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/nomeGiocatore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Giocatore2" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/RuoloGiocatore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghoul"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeGiocatore2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_prima2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore2" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_dopo2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore2" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomePrimaSquadra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_dopo2" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomeSecondaSquadra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_prima2" />
+
+    //terza scheda
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Giocatore3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NomePrimaSquadra2" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/nomeGiocatore3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Giocatore3" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/RuoloGiocatore3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghoul"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeGiocatore3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_prima3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore3" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_dopo3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore3" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomePrimaSquadra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_dopo3" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomeSecondaSquadra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_prima3" />
+    //scheda 4
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Giocatore4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NomePrimaSquadra3" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/nomeGiocatore4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Giocatore4" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/RuoloGiocatore4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghoul"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeGiocatore4" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_prima4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore4" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scudetto_dopo4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RuoloGiocatore4" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomePrimaSquadra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_dopo4" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/NomeSecondaSquadra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Kaneki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scudetto_prima4" />
+    //scheda 5
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
