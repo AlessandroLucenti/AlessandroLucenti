@@ -11,13 +11,13 @@
         android:id="@+id/NbaWesternConference"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="71dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:background="@color/bottom_nav_background"
         android:backgroundTint="@color/bottom_nav_background"
         android:text="Western conference"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/NbaEsternConference"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,14 +25,201 @@
         android:id="@+id/NbaEsternConference"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         android:background="@color/bottom_nav_background"
         android:backgroundTint="@color/bottom_nav_background"
         android:text="Estern conference"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@id/NbaWesternConference"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    //western conference
+
+
+
+    <TextView
+        android:id="@+id/primoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 1°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NbaWesternConference"
+        app:layout_constraintBottom_toTopOf="@id/secondoW"/>
+
+    <TextView
+        android:id="@+id/secondoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 2°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/primoW"
+        app:layout_constraintBottom_toTopOf="@id/terzoW"/>
+
+    <TextView
+        android:id="@+id/terzoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 3°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondoW"
+        app:layout_constraintBottom_toTopOf="@id/quartoW"/>
+
+    <TextView
+        android:id="@+id/quartoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 4°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/terzoW"
+        app:layout_constraintBottom_toTopOf="@id/quintoW"/>
+
+    <TextView
+        android:id="@+id/quintoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 5°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quartoW"
+        app:layout_constraintBottom_toTopOf="@id/sestoW"/>
+
+    <TextView
+        android:id="@+id/sestoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 6°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quintoW"
+        app:layout_constraintBottom_toTopOf="@id/settimoW"/>
+
+    <TextView
+        android:id="@+id/settimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 7°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sestoW"
+        app:layout_constraintBottom_toTopOf="@id/ottavoW" />
+
+    <TextView
+        android:id="@+id/ottavoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 8°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settimoW"
+        app:layout_constraintBottom_toTopOf="@id/nonoW"/>
+
+    <TextView
+        android:id="@+id/nonoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 9°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ottavoW"
+        app:layout_constraintBottom_toTopOf="@id/decimoW"/>
+
+    <TextView
+        android:id="@+id/decimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 10°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nonoW"
+        app:layout_constraintBottom_toTopOf="@id/undicesimoW"/>
+
+    <TextView
+        android:id="@+id/undicesimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 11°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/decimoW"
+        app:layout_constraintBottom_toTopOf="@id/dodicesimoW"/>
+
+    <TextView
+        android:id="@+id/dodicesimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 12°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/undicesimoW"
+        app:layout_constraintBottom_toTopOf="@id/tredicesimoW"/>
+
+    <TextView
+        android:id="@+id/tredicesimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 13°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dodicesimoW"
+        app:layout_constraintBottom_toTopOf="@id/quattordicesimoW"
+        />
+
+    <TextView
+        android:id="@+id/quattordicesimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 14°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/quindicesimoW"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tredicesimoW" />
+
+    <TextView
+        android:id="@+id/quindicesimoW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 15°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quattordicesimoW"/>
+    //estern conference
+
     <TextView
         android:id="@+id/primoE"
         android:layout_width="wrap_content"
@@ -40,9 +227,11 @@
         android:text="Heat 1°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/NbaEsternConference"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/NbaEsternConference"
+        app:layout_constraintBottom_toTopOf="@id/secondoE"/>
+
     <TextView
         android:id="@+id/secondoE"
         android:layout_width="wrap_content"
@@ -50,9 +239,11 @@
         android:text="Heat 2°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/primoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/primoE"
+        app:layout_constraintBottom_toTopOf="@id/terzoE"/>
+
     <TextView
         android:id="@+id/terzoE"
         android:layout_width="wrap_content"
@@ -60,9 +251,11 @@
         android:text="Heat 3°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/secondoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/secondoE"
+        app:layout_constraintBottom_toTopOf="@id/quartoE"/>
+
     <TextView
         android:id="@+id/quartoE"
         android:layout_width="wrap_content"
@@ -70,19 +263,23 @@
         android:text="Heat 4°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/terzoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/terzoE"
+        app:layout_constraintBottom_toTopOf="@id/quintoE"/>
+
     <TextView
-    android:id="@+id/quintoE"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Heat 5°"
-    android:textColor="@color/white"
-    android:textSize="20dp"
-    app:layout_constraintTop_toBottomOf="@id/quartoE"
-    app:layout_constraintEnd_toEndOf="parent"
-    />
+        android:id="@+id/quintoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat 5°"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/quartoE"
+        app:layout_constraintBottom_toTopOf="@id/sestoE"/>
+
     <TextView
         android:id="@+id/sestoE"
         android:layout_width="wrap_content"
@@ -90,9 +287,11 @@
         android:text="Heat 6°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/quintoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/quintoE"
+        app:layout_constraintBottom_toTopOf="@id/settimoE"/>
+
     <TextView
         android:id="@+id/settimoE"
         android:layout_width="wrap_content"
@@ -100,9 +299,11 @@
         android:text="Heat 7°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/sestoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/sestoE"
+        app:layout_constraintBottom_toTopOf="@id/ottavoE"/>
+
     <TextView
         android:id="@+id/ottavoE"
         android:layout_width="wrap_content"
@@ -110,9 +311,11 @@
         android:text="Heat 8°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/settimoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/settimoE"
+        app:layout_constraintBottom_toTopOf="@+id/nonoE"/>
+
     <TextView
         android:id="@+id/nonoE"
         android:layout_width="wrap_content"
@@ -120,9 +323,11 @@
         android:text="Heat 9°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/ottavoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/ottavoE"
+        app:layout_constraintBottom_toTopOf="@id/decimoE"/>
+
     <TextView
         android:id="@+id/decimoE"
         android:layout_width="wrap_content"
@@ -130,9 +335,11 @@
         android:text="Heat 10°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/nonoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/nonoE"
+        app:layout_constraintBottom_toTopOf="@id/undicesimoE"/>
+
     <TextView
         android:id="@+id/undicesimoE"
         android:layout_width="wrap_content"
@@ -140,9 +347,11 @@
         android:text="Heat 11°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/decimoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/decimoE"
+        app:layout_constraintBottom_toTopOf="@id/dodicesimoE"/>
+
     <TextView
         android:id="@+id/dodicesimoE"
         android:layout_width="wrap_content"
@@ -150,9 +359,11 @@
         android:text="Heat 12°"
         android:textColor="@color/white"
         android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
         app:layout_constraintTop_toBottomOf="@id/undicesimoE"
-        app:layout_constraintEnd_toEndOf="@id/undicesimoE"
-        />
+        app:layout_constraintBottom_toTopOf="@id/tredicesimoE"/>
+
     <TextView
         android:id="@+id/tredicesimoE"
         android:layout_width="wrap_content"
@@ -160,9 +371,11 @@
         android:text="Heat 13°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/dodicesimoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/dodicesimoE"
+        app:layout_constraintBottom_toTopOf="@id/quattordicesimoE"/>
+
     <TextView
         android:id="@+id/quattordicesimoE"
         android:layout_width="wrap_content"
@@ -170,9 +383,11 @@
         android:text="Heat 14°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/tredicesimoE"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/tredicesimoE"
+        app:layout_constraintBottom_toTopOf="@id/quindicesimoE"/>
+
     <TextView
         android:id="@+id/quindicesimoE"
         android:layout_width="wrap_content"
@@ -180,9 +395,164 @@
         android:text="Heat 15°"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/quattordicesimoE"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/NbaEsternConference"
+        app:layout_constraintTop_toBottomOf="@id/quattordicesimoE" />
+//scudetti squadre wc
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra1W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/primoW"
+        app:layout_constraintTop_toBottomOf="@+id/NbaWesternConference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra2W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra2W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/secondoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra1W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra3W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/StemmaSquadra3W"
+    android:layout_width="27dp"
+    android:layout_height="27dp"
+    android:src="@drawable/kenkaneki"
+    app:layout_constraintEnd_toStartOf="@+id/secondoW"
+    app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra2W"
+    app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra4W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra4W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/secondoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra3W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra5W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra5W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/secondoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra4W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra6W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/StemmaSquadra6W"
+    android:layout_width="27dp"
+    android:layout_height="27dp"
+    android:src="@drawable/kenkaneki"
+    app:layout_constraintEnd_toStartOf="@+id/secondoW"
+    app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra5W"
+    app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra7W"
+     />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra7W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/secondoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra6W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra8W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra8W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/secondoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra7W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra9W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra9W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/secondoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra8W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra10W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra10W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/decimoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra9W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra11W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra11W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/undicesimoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra10W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra12W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra12W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toStartOf="@+id/dodicesimoW"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra11W"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra13W"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra13W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra14W"
+        app:layout_constraintEnd_toStartOf="@+id/tredicesimoW"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra12W"
         />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra14W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintBottom_toTopOf="@id/StemmaSquadra15W"
+        app:layout_constraintEnd_toStartOf="@+id/quattordicesimoW"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StemmaSquadra13W" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/StemmaSquadra15W"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/quindicesimoW"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StemmaSquadra14W"/>
+    //scudetti squadre ec
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

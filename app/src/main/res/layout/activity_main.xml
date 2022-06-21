@@ -17,23 +17,14 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+
          />
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView">
-
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/mainContainer"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="410dp"
-            android:layout_height="679dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,5 +33,5 @@
             app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView"
             app:navGraph="@navigation/nav_graph"
             />
-    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

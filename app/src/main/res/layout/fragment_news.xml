@@ -1,7 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewsFragment"
-    android:background="@color/black"/>
+    android:background="@color/black">
+    //notizia 1
+    <TextView
+        android:id="@+id/notizia1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notizia numero 1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/immagineNotizia1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notizia1" />
+    <TextView
+        android:id="@+id/editore1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editore numero 1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagineNotizia1"
+        />
+    //notizia 2
+    <TextView
+        android:id="@+id/notizia2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notizia numero 2"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editore1" />
+
+    <ImageView
+        android:id="@+id/immagineNotizia2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notizia2" />
+    <TextView
+        android:id="@+id/editore2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editore numero 1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagineNotizia2"
+        />
+    //notizia 3
+    <TextView
+        android:id="@+id/notizia3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notizia numero 2"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editore2" />
+
+    <ImageView
+        android:id="@+id/immagineNotizia3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notizia3" />
+    <TextView
+        android:id="@+id/editore3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editore numero 1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagineNotizia3"
+        />
+    //notizia 4
+    <TextView
+        android:id="@+id/notizia4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notizia numero 2"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editore3" />
+
+    <ImageView
+        android:id="@+id/immagineNotizia4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kenkaneki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notizia4" />
+    <TextView
+        android:id="@+id/editore4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editore numero 1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagineNotizia4"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
