@@ -1,11 +1,12 @@
 package com.example.nbapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.fragment.app.Fragment
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -34,12 +35,30 @@ class HighlightsFragment : Fragment() {
             }
 
         }
-    }
-
-    fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_highlights, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val frameVideo =
+            "<html><body>Video From YouTube<br><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/EIw1w0Wu_V0\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
+
+        val displayYoutubeVideo = view.findViewById(R.id.webView) as WebView
+        displayYoutubeVideo.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                return false
+            }
+        }
+        val webSettings = displayYoutubeVideo.settings
+        webSettings.javaScriptEnabled = true
+        displayYoutubeVideo.loadData(frameVideo, "text/html", "utf-8")
+    }
+
+    }
+
+
