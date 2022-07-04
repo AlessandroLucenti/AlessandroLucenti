@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/favFragment">
+
+    <fragment
+        android:id="@+id/highlightFragment"
+        android:name="com.example.nbapp.HighlightsFragment"
+        android:label="fragment_highlights"
+        tools:layout="@layout/fragment_highlights" />
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="com.example.nbapp.MarketFragment"
+        android:label="fragment_market"
+        tools:layout="@layout/fragment_market" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.nbapp.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.nbapp.NewsFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/favFragment"
+        android:name="com.example.nbapp.FavFragment"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav" />
+</navigation>
